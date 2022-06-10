@@ -37,7 +37,8 @@ function getA1Cdata() {
       document.getElementById("patientFN").innerText = error.stack;
     }
   );
-  let container = document.getElementById('containerId'); let tblRow=null; let tblCell=null;tblRow = document.createElement('div');tblRow.classList.add('row'); tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayCalc(tblCell,'Fibrosis-4',' (|Age| *|AST| )| /| (|Platelets| *| √| (|ALT| )| )');; tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayLine(tblCell,'Observation','LAB (Createnine)');;container.appendChild(tblRow);tblRow = document.createElement('div');tblRow.classList.add('row'); tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayTable(tblCell,'MedicationRequest','Status|Intent');; tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayBarChart(tblCell,'Observation','VITAL SIGN (BMI)');;container.appendChild(tblRow);
+  let container = document.getElementById('containerId'); let tblRow=null; let tblCell=null;tblRow = document.createElement('div');tblRow.classList.add('row'); tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayCalc(tblCell,'Fibrosis-4',' (|
+  | *|AST| )| /| (|Platelets| *| √| (|ALT| )| )');; tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayLine(tblCell,'Observation','LAB (Createnine)');;container.appendChild(tblRow);tblRow = document.createElement('div');tblRow.classList.add('row'); tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayTable(tblCell,'MedicationRequest','Status|Intent');; tblCell = document.createElement('div');tblCell.className='col-sm-6';tblCell.setAttribute('style', 'padding: 40px;');tblRow.appendChild(tblCell);displayBarChart(tblCell,'Observation','VITAL SIGN (BMI)');;container.appendChild(tblRow);
 }
 
 function displayBarChart(container, type, params) {
@@ -393,7 +394,7 @@ function displayCalc(container, type, params) {
 
         var row2 = table.insertRow(-1);
         var row2Cell = row2.insertCell(-1);
-        row2Cell.innerHTML = "<h3>Age= 35, AST=40, ALT=32, Platelet=300</h3>";
+        row2Cell.innerHTML = "<h3>Age= 36, AST=40, ALT=32, Platelet=300</h3>";
 
         var row3 = table.insertRow(-1);
         var row3Cell = row3.insertCell(-1);
